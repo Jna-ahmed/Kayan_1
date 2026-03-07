@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Cairo } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-// استدعاء الهيدر - تأكدي أن المسار صحيح واسم الملف header.tsx
 import Header from '@/components/header' 
 
 const cairo = Cairo({ subsets: ['arabic', 'latin'], weight: ['400', '600', '700', '800', '900'] })

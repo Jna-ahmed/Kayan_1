@@ -39,14 +39,14 @@ export default function GallerySection() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform duration-300 lg:group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 
-                {/* التظليل: ظاهر دايماً على الموبايل، ومختفي (0) على الكمبيوتر ويظهر بالـ Hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300" />
+                {/* التعديل هنا: opacity-100 للموبايل و lg:opacity-0 للكمبيوتر */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 lg:opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 
-                {/* النص: ظاهر دايماً على الموبايل، ومختفي (0) على الكمبيوتر ويظهر بالـ Hover */}
-                <p className="absolute bottom-3 right-3 left-3 text-sm font-semibold text-white opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 line-clamp-2 md:line-clamp-none">
+                {/* التعديل هنا: الكلام يظهر دايماً على الموبايل ويختفي بالـ lg عشان الـ hover */}
+                <p className="absolute bottom-3 right-3 left-3 text-sm font-semibold text-white opacity-100 lg:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {image.alt}
                 </p>
               </div>

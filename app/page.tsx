@@ -1,6 +1,6 @@
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
-import GallerySection from "@/components/gallery--section"
+import GallerySection from "@/components/gallery-section" 
 import PartnershipsSection from "@/components/partnerships-section"
 import RegistrationForm from "@/components/registration-form"
 import Navbar from "@/components/navbar"

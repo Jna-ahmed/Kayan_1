@@ -41,8 +41,14 @@ export default function GallerySection() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                <p className="absolute bottom-3 right-3 text-sm font-semibold text-primary-foreground opacity-0 transition-opacity group-hover:opacity-100">
+                
+                {/* التعديل هنا: جعلنا التظليل شفافاً (مختفياً) فقط على الشاشات الكبيرة lg، ويظهر بالـ hover */}
+                {/* على الموبايل (الوضع الافتراضي) سيكون ظاهراً opacity-100 */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent opacity-100 lg:opacity-0 transition-opacity group-hover:opacity-100" />
+                
+                {/* التعديل هنا: جعلنا النص شفافاً (مختفياً) فقط على الشاشات الكبيرة lg، ويظهر بالـ hover */}
+                {/* على الموبايل (الوضع الافتراضي) سيكون ظاهراً opacity-100 */}
+                <p className="absolute bottom-3 right-3 left-3 text-sm font-semibold text-primary-foreground opacity-100 lg:opacity-0 transition-opacity group-hover:opacity-100">
                   {image.alt}
                 </p>
               </div>

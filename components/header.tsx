@@ -24,7 +24,7 @@ export default function Header() {
           <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-primary-foreground bg-white">
             <Image 
               src="https://i.postimg.cc/26H0kMvJ/image.png" 
-              alt="لوجو كيان الشباب المستقبل"
+              alt="لوجو كيان الشباب بناة المستقبل"
               fill
               className="object-contain p-1"
             />

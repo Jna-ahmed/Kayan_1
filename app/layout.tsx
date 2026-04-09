@@ -7,7 +7,7 @@ import Header from '@/components/header'
 const cairo = Cairo({ subsets: ['arabic', 'latin'], weight: ['400', '600', '700', '800', '900'] })
 
 export const metadata: Metadata = {
-  title: 'كيان شباب المستقبل',
+  title: 'كيان الشباب بناه المستقبل',
   description: 'نمكّن الشباب من تطوير مهارات القيادة والإبداع لبناء جيل مستعد للمستقبل',
   generator: 'v0.app',
 }
